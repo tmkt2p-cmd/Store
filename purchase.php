@@ -1,8 +1,8 @@
 <?php
-// purchase.php - append order to data/sales.txt in readable format
+// purchase.php - append order to sales.txt (in the same folder) in readable format
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    header('Location: purchase.html');
+    header('Location: purchase.html'); // Ensure you update this to the correct HTML file if needed
     exit;
 }
 
@@ -23,12 +23,12 @@ $customer = clean($customer);
 // compute total
 $total = round($price * $quantity, 2);
 
-// prepare directory & file
-$dir = __DIR__ . '/data';
-if (!is_dir($dir)) {
-    mkdir($dir, 0755, true);
-}
-$file = $dir . '/sales.txt';
+// *****************************************************************
+// * PATH CHANGE: Removing the 'data' directory logic *
+// *****************************************************************
+
+// Set the file path directly to the current directory
+$file = __DIR__ . '/sales.txt'; 
 
 // build text block
 $now = date('Y-m-d H:i:s');
@@ -68,6 +68,7 @@ if (file_put_contents($file, $block, FILE_APPEND) === false) {
 
     <?php if ($error): ?>
       <p class="err"><?php echo $error; ?></p>
+      <p><strong>Path Attempted:</strong> <code><?php echo htmlspecialchars($file); ?></code></p>
     <?php else: ?>
       <p>Order saved To Server: Thank You For Ordering Have A Nice Day ☺️</p>
       <pre><?php echo htmlspecialchars($block); ?></pre>
