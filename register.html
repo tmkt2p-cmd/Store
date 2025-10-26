@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        div{
+            margin-top: 170px;    height: 400px;    width: 350px;
+            border-style: groove;
+            
+            background-color:#fff;
+            margin-left: 18px;
+            border-radius: 12px;
+            
+
+        }
+
+ @import url(
+'https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+        h1{
+        color: #333;
+        border-color: red;
+        font-family: "Roboto";
+
+        
+        }
+
+        body{
+        backgrund-color: #f4f4f4;
+        }
+        
+        #sub{
+        background-color: #007bff;
+        border-color: #fff;
+        color: #fff;
+        height: 40px;
+        width: 3p00px;
+        border-radius: 12px;
+        box-shadow: #fff;
+        
+        }
+
+        label{
+        margin-right: 200px;
+
+        }
+
+        input{
+        border-radius: 8px;
+        height: 35px;
+        width: 300px;
+        }
+    
+     
+   
+    </style>
+
+</head>
+
+<body>
+<center>
+    <div>
+    <form action="login.html" method="post">
+        
+            <h1>Register</h1>
+<h4>
+            <label>Name</label><br>
+            <input type="text" id="name" required><br><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="country">Country:</label><br>
+               <select id="country" name="country">
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="uk">India</option>
+                <option value="australia">Australia</option>
+                <option value="other">Other</option>
+                </select><br><br>
+
+            <input type="submit" value="REGISTER" id="sub" >  <br><br>
+    </form>
+    <a href="login.html" >Already Registered ? </a>
+
+    </div>
+</body>
+
+</html>
