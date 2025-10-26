@@ -1,7 +1,7 @@
 <?php
 // login.php - saves posted data into users.txt (in the same folder as login.php) and then shows a confirmation
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     // Sanitize data (unchanged)
     $username = isset($_POST['username']) ? trim($_POST['username']) : '';
     $password = isset($_POST['password']) ? trim($_POST['password']) : '';
