@@ -4,13 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+    body{
+      background-color:#d3d3d3;
+      height: 100%;
+      width: 100%;
+    }
+      .box{
+        background-color: white;
+        border-radius: 8px;
+        border-style: solid;
+        position: relative;
+        top: 100px;
+        width: 200px;
+        height: 300px;
+      }
+      
+      .panda{
+        position: relative;
+        top: -80px;
+      }
+      
+      .face input{
+        position: relative;
+        top: 0px;
+        padding: 10px 0px;
+        margin-bottom: 10px;
+      }
+      
+      .face input:active{
+        border-style: solid;
+        border-color: green;
+      }
+      
+      .bt{
+        height: 30px;
+        width: 150px;
+        width: 95%;
+        border-color: #f61;
+        box-shadow: 1px 2px 3px;
+        background-color: #f61;
+        border-radius: 12px;
+        color: white;
+        font-size: 19px;
+      }
+      .bt:active{
+        background-color: #ff6f61;
+        border-style: solid;
+        background: linear-gradient(to right,red,#ff6f61);
+      }
+      
+      .hand{
+        height:100px;
+        width: 40px;
+        border-radius: 12px;
+        display: relative;
+        margin-top: -300px;
+        margin-left: -130px;
+        background-color: black;
+      }
+      
+      .h2{
+        position: relative;
+        margin-left: 150px;
+        margin-top: -40px;
+        border-radius: 12px;
+        background-color: black;
+        height: 40px;
+        width: 40px;
+      }
+      .h3{
+        position: relative;
+        margin-left: 150px;
+        margin-top: 270px;
+        border-radius: 12px;
+        background-color: black;
+        height: 40px;
+        width: 40px;
+      }
+      
+      .h4{
+        position: relative;
+        margin-left: -120px;
+        margin-top: -40px;
+        border-radius: 12px;
+        background-color: black;
+        height: 40px;
+        width: 40px;
+      }
+      
+      
+    </style>
+    
+    <script>
+      document.getElementById("pass").addevent => function (){"hand",rotate: 100deg;
+        
+      }
+    </script>
 </head>
-<body>
+<body><center>
     <section class="box">
         <div class="face">
-            <img src="panda.png" height="50%" width="50%"
-            <input type="text" placeholder="username">
+            <img src="panda.png" height="50%" width="50%" class="panda">
+            <input type="text" placeholder="username" class="name">
+            <input type="password" id="pass" placeholder="password" class="password">
+            </div>
+            <div>
+            <input type="button" value="Login" class="bt">
         </div>
-    </section>
+        </section>
+        <div class="hand">
+          
+        </div>
+        <div class="h2">
+            
+          </div>
+<div class="h3">
+            
+          </div>
+          
+<div class="h4">
+            
+          </div>
 </body>
 </html>
