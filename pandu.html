@@ -54,24 +54,30 @@
         background: linear-gradient(to right,red,#ff6f61);
       }
       
-      .hand{
-        height:100px;
-        width: 40px;
-        border-radius: 12px;
-        display: relative;
-        margin-top: -300px;
-        margin-left: -130px;
-        background-color: black;
-      }
+    .hand{
+    height:100px;
+    width: 40px;
+    border-radius: 12px;
+    position: absolute;
+    top: 0px;       /* adjust */
+    left: 150px;      /* adjust */
+    transition: transform 400ms ease;
+    z-index: 5;
+    transform-origin: top right;   /* MOST IMPORTANT */
+    background-color: black;
+}
       
       .h2{
-        position: relative;
-        margin-left: 150px;
-        margin-top: -40px;
-        border-radius: 12px;
+        position: absolute;
+        height: 100px;
+        width:40px;
+        top:0px;
+        right: 150px;
+        transition: transform 400ms ease;
+        transform-origin: top left;
         background-color: black;
-        height: 40px;
-        width: 40px;
+        border-radius: 12px;
+        
       }
       .h3{
         position: relative;
@@ -95,11 +101,20 @@
       
       
     </style>
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-      document.getElementById("pass").addevent => function (){"hand",rotate: 100deg;
-        
-      }
+      $(document).ready(function (){
+        $("#pass").focus(function(){
+      
+        $(".hand").css({
+          transform: 'rotate(100deg)',
+        });
+        $(".h2").css({
+          transform: 'rotate(-100deg)',
+
+        });
+        });
+      });
     </script>
 </head>
 <body><center>
@@ -112,19 +127,21 @@
             <div>
             <input type="button" value="Login" class="bt">
         </div>
-        </section>
+        
         <div class="hand">
           
         </div>
+        
         <div class="h2">
             
           </div>
 <div class="h3">
-            
+            <imgsrc="st,small,507x507-pad,600x600,f8f8f8.jpg"  height="50%" width="50">
           </div>
           
 <div class="h4">
-            
+             <img src="st,small,507x507-pad,600x600,f8f8f8.jpg" height="50%" width="50%">
           </div>
+          </section>
 </body>
 </html>
