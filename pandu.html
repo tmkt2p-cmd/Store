@@ -5,23 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-    body{
-      background-color:#d3d3d3;
-      height: 100%;
-      width: 100%;
-    }
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;           /* full screen height */
+  display: flex;
+  justify-content: center; /* center left-right */
+  align-items: center;      /* center top-bottom */
+  background: #d3d3d3;
+}
       .box{
         background-color: white;
         border-radius: 8px;
         border-style: solid;
         position: relative;
         top: 100px;
-        width: 200px;
+        width: 250px;
         height: 300px;
       }
       
       .panda{
-        position: relative;
+        position:relative;
         top: -80px;
       }
       
@@ -39,8 +43,8 @@
       
       .bt{
         height: 30px;
-        width: 150px;
-        width: 95%;
+        width: 100px;
+        width: 80%;
         border-color: #f61;
         box-shadow: 1px 2px 3px;
         background-color: #f61;
@@ -56,12 +60,12 @@
       }
       
     .hand{
-    height:100px;
+    height:80px;
     width: 40px;
     border-radius: 12px;
-    position: absolute;
-    top: 0px;       /* adjust */
-    left: 150px;      /* adjust */
+    
+    margin-top: -222px;       /* adjust */
+    margin-left: 140px;      /* adjust */
     transition: transform 400ms ease;
     z-index: 5;
     transform-origin: top right;   /* MOST IMPORTANT */
@@ -69,11 +73,11 @@
 }
       
       .h2{
-        position: absolute;
-        height: 100px;
+        
+        height: 80px;
         width:40px;
-        top:0px;
-        right: 150px;
+       margin-top: -85px;
+        margin-right: 150px;
         transition: transform 400ms ease;
         transform-origin: top left;
         background-color: black;
@@ -86,18 +90,30 @@
         margin-top: 80px;
         border-radius: 12px;
         background-color: black;
-        height: 40px;
-        width: 40px;
+        height: 50px;
+        width: 50px;
       }
       
       .h4{
         position: relative;
         margin-left: -120px;
-        margin-top: -40px;
+        margin-top: -50px;
         border-radius: 12px;
         background-color: black;
-        height: 40px;
-        width: 40px;
+        height: 50px;
+        width: 50px;
+      }
+      
+      .name{
+        border-left: none;
+        border-top: none;
+        border-right: none;
+      }
+      
+.password{
+        border-left: none;
+        border-top: none;
+        border-right: none;
       }
       
       
